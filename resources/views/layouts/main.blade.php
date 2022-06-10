@@ -403,7 +403,8 @@
         </div>        <div class="app-main">
             
             <!-- SIDEBAR -->
-            @include('partials.sidebar')
+            
+            @include('partials.sidebar-admin')
             
             <div class="app-main__outer">
             

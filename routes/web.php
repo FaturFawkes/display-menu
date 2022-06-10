@@ -17,14 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', function () {
-    return view('admin/index');
+// Route::get('/admin', function () {
+//     return view('admin/index', ['sidebar => admin']);
+// });
+
+Route::view('/admin', 'admin/index', [
+    'sidebar' => 'admin'
+]);
+
+Route::get('/catering', function () {
+    return view('catering/index');
 });
 
 Route::get('/user', function () {
     return view('user/index');
-});
-
-Route::get('/catering', function () {
-    return view('catering/index');
 });
