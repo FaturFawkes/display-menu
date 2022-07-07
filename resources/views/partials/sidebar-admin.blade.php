@@ -1,104 +1,103 @@
-<div class="app-sidebar sidebar-shadow">
-                    <div class="app-header__logo">
-                        <div class="logo-src"></div>
-                        <div class="header__pane ml-auto">
-                            <div>
-                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
-                                    <span class="hamburger-box">
-                                        <span class="hamburger-inner"></span>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="app-header__mobile-menu">
-                        <div>
-                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="app-header__menu">
-                        <span>
-                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
-                                <span class="btn-icon-wrapper">
-                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
-                                </span>
-                            </button>
-                        </span>
-                    </div>    <div class="scrollbar-sidebar ps ps--active-y">
-                        <div class="app-sidebar__inner">
-                            <ul class="vertical-nav-menu metismenu">
-                                <li class="app-sidebar__heading">Dashboards</li>
-                                <li>
-                                    <a href="index.html" class="mm-active">
-                                        <i class="metismenu-icon pe-7s-rocket"></i>
-                                        Main Dashboard
-                                    </a>
-                                </li>
-                                <li class="app-sidebar__heading">Catering Menu</li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-diamond"></i>
-                                        Catering
-                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                    </a>
-                                    <ul class="mm-collapse">
-                                        <li>
-                                            <a href="#">
-                                                <i class="metismenu-icon"></i>
-                                                Catering Admin
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="metismenu-icon"></i>
-                                                Catering User
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="metismenu-icon"></i>
-                                                Menu
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="metismenu-icon pe-7s-display2"></i>
-                                        Food Menu Management
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tables-regular.html">
-                                        <i class="metismenu-icon pe-7s-display2"></i>
-                                        Tables
-                                    </a>
-                                </li>
-                                <li class="app-sidebar__heading">Register</li>
-                                    <li>
-                                        <a href="tables-regular.html">
-                                            <i class="metismenu-icon pe-7s-display2"></i>
-                                            New Catering
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tables-regular.html">
-                                            <i class="metismenu-icon pe-7s-display2"></i>
-                                            Catering Admin
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tables-regular.html">
-                                            <i class="metismenu-icon pe-7s-display2"></i>
-                                            Catering User
-                                        </a>
-                                    </li>
-                                </li>
-                            </ul>
-                        </div>
-                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 654px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 631px;"></div></div></div>
-                </div>
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            {{-- <i class="fas fa-laugh-wink"></i> --}}
+        </div>
+        <div class="sidebar-brand-text mx-3"><img src="img/daihatsu-logo.png" alt="logo"></div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Menu
+    </div>
+
+    <!-- Nav Item - All -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>All Menu</span></a>
+    </li>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Catering</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="#">PSN</a>
+                <a class="collapse-item" href="#">DUTA</a>
+                <a class="collapse-item" href="#">RYAN</a>
+                <a class="collapse-item" href="#">GDSK</a>
+                <a class="collapse-item" href="#">LCR</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Utilities</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Utilities:</h6>
+                <a class="collapse-item" href="utilities-color.html">Colors</a>
+                <a class="collapse-item" href="utilities-border.html">Borders</a>
+                <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                <a class="collapse-item" href="utilities-other.html">Other</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Register
+    </div>
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Catering</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>User</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>

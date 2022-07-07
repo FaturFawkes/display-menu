@@ -1,114 +1,101 @@
-@extends('layouts.main')
+@extends('main')
 
 @section('content')
-<div class="app-main__inner">
-                        <div class="app-page-title">
-                            <div class="page-title-wrapper">
-                                <div class="page-title-heading">
-                                    <div class="page-title-icon">
-                                        <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                                        </i>
-                                    </div>
-                                    <div>Analytics Dashboard
-                                        <div class="page-title-subheading">This is an example dashboard created using build-in elements and components.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="page-title-actions">
-                                    <div class="d-inline-block dropdown">
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-inbox"></i>
-                                                        <span>
-                                                            Inbox
-                                                        </span>
-                                                        <div class="ml-auto badge badge-pill badge-secondary">86</div>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-book"></i>
-                                                        <span>
-                                                            Book
-                                                        </span>
-                                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-picture"></i>
-                                                        <span>
-                                                            Picture
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a disabled="" href="javascript:void(0);" class="nav-link disabled">
-                                                        <i class="nav-link-icon lnr-file-empty"></i>
-                                                        <span>
-                                                            File Disabled
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>    </div>
-                        </div>            <div class="row">
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-midnight-bloom">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Total Orders</div>
-                                            <div class="widget-subheading">Last year expenses</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>1896</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-arielle-smile">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Clients</div>
-                                            <div class="widget-subheading">Total Clients Profit</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>$ 568</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-grow-early">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Followers</div>
-                                            <div class="widget-subheading">People Interested</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>46%</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-premium-dark">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Products Sold</div>
-                                            <div class="widget-subheading">Revenue streams</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-warning"><span>$14M</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Earnings (Monthly)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Earnings (Annual)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Pending Requests</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 @endsection

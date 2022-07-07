@@ -21,9 +21,15 @@ Route::get('/', function () {
 //     return view('admin/index', ['sidebar => admin']);
 // });
 
-Route::view('/admin', 'admin/index', [
-    'sidebar' => 'admin'
-]);
+// Route::view('/admin/new-user', 'admin/new-user');
+
+Route::get('/admin', function () {
+    return view('admin/index');
+});
+
+Route::get('/admin/new-user', function () {
+    return view('admin/new-user');
+});
 
 Route::get('/catering', function () {
     return view('catering/index');
